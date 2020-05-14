@@ -24,7 +24,7 @@ To view your local version of the site, open **index.html** in Google Chrome.
 
 ## Implementation Details
 
-To complete this project, you will need to create the database tables and API routes specified below. In addition to these specs, we have provided high-level steps for additional guidance in tying together all of your new skills in this project, linked at the end of this article. Feel free to not use these steps if you'd like an extra challenge. As you work through the project, be sure to use `npm` to install the necessary packages such as `express`.
+To complete this project, you will need to create the database tables and API routes specified below. 
 
 To test this functionality you can run the testing suite and interact with the API via the provided front-end. If you want more data to interact with in the front-end, you can run the **seed.js** file to add data to your database.
 
@@ -125,9 +125,4 @@ In order for the tests and provided front-end to run properly, you will need to 
 
 ## Testing
 
-A testing suite has been provided for you, checking for all essential functionality and edge cases.
-
-To run these tests, first, open the root project directory in your terminal. Then run `npm install` to install all necessary testing dependencies (if you haven't already). Finally, run `npm test`. You will see a list of tests that ran with information about whether or not each test passed. After this list, you will see more specific output about why each failing test failed.
-
-As you implement functionality, run the tests to ensure you are creating correctly named variables and functions that return the proper values.
-The tests will additionally help you identify edge cases that you may not have anticipated when first writing the application.
+Run `npm test`.
