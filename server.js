@@ -10,11 +10,11 @@ const PORT = process.env.PORT || 4000;
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use(morgan('dev'));
 
 app.use('/api', apiRouter);
 
 app.use(errorHandler());
-app.use(morgan('dev'));
 
 app.listen(PORT, () => {
     console.log(`Listening on Port: ${PORT}`);
