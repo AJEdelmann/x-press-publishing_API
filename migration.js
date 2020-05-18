@@ -15,5 +15,16 @@ db.serialize(function() {
     '`name` TEXT NOT NULL, ' +
     '`description` TEXT NOT NULL, ' +
     'PRIMARY KEY(`id`) )'
-    )
+    );
+
+    db.run('CREATE TABLE IF NOT EXISTS `Issue` ( ' +
+    '`id` INTEGER NOT NULL, ' +
+    '`name` TEXT NOT NULL, ' +
+    '`issue_number` INTEGER NOT NULL, ' +
+    '`publication_date` TEXT NOT NULL, ' +
+    '`artist_id` INTEGER NOT NULL FOREIGN KEY, ' +
+    '`series_id` INTEGER NOT NULL FOREIGN KEY, ' +
+    'PRIMARY KEY(`id`), ' +
+    'FOREIGN KEY(`artist_id`) REFERENCES `Artist`(`id`), ' +
+    'FOREIGN KEY(`series_id`) REFERENCES `Series`(`id`) )');
 });
